@@ -9,17 +9,19 @@
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  padding: 50px 0;
+  padding-top: 30px;
 }
 
 $btnClr: rgba(232, 101, 208, 0.867);
 $fontClr: black;
 $background-clr:rgba(228, 82, 231, 0.374);
 
-
+body{
+  width: 100%;
+}
 #header {
   height: 70px;
-  li{
+  .header__nav, .header__cta{
     display: none;
   }
   }
@@ -47,6 +49,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
       padding: 30px;
       border-radius: 40px;
       text-align: center;
+      margin-left: 100px;
     }
     .firstview__cta a{
       color: #fff;
@@ -58,39 +61,38 @@ $background-clr:rgba(228, 82, 231, 0.374);
     background-color: $background-clr;
     .about__txt{
       @include ttlstyle();
+      font-size: 18px;
+      padding-bottom: 20px;
     }
     .about__img{
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
       img{
-        width: 100%;
+        width: 90%;
       }
     }
   }
 #trouble{
-  max-width: 1200px;
-  height: 800px;
+  height: 600px;
   text-align: left;
-  margin: auto;
   .trouble__ttl{
     @include ttlstyle();
+    margin-bottom: 20px;
   }
   
   .trouble__card{
     display: flex;
     align-items: center;
   }
-  .trouble__card-item:nth-of-type(2n){
+  .trouble__card2{
+    display: flex;
+    flex-direction: row-reverse;
     margin-left: 30px;
   }
   .trouble__img{
-    width: 200px;
-    margin: 0 auto;
-    .trouble__img:nth-of-type(2n){
-      margin: 0 auto;
-    }
+    width: 100%;
     img{
-      width: 100%;
+      width: 80%;
     }
   }
   .trouble__card-txt{
@@ -104,7 +106,6 @@ $background-clr:rgba(228, 82, 231, 0.374);
 #learn{
   height: 1600px;
   background-color: $background-clr;
-  margin: 0 auto;
   
 .learn__ttl{
   @include ttlstyle();
@@ -411,16 +412,85 @@ $background-clr:rgba(228, 82, 231, 0.374);
 
 
 @media screen and (min-width:769px){
-    .header__nav{
+  #header{
+    margin: 0 auto;
+  .header__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    line-height: 1.5em;
+  }
+  .header__logo-img{
+    width: 100px;
+  }
+    .header__nav {
+    display: block;
     list-style: none;
     display: flex;
-    .header__list > a{
+     .header__list > a{
       padding-left: 30px;
       text-decoration: none;
       color: $fontClr;
       font-size: 18px;
     }
+
+    }
+    .header__cta {
+      display: block;
+      display: flex;
+    li {
+      list-style: none;
+    }
   }
+  .header__cta-btn{
+    background-color: $btnClr;
+    font-size: 18px;
+    color: #FFF;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .header__cta-btn--blue{
+    background-color: rgb(60, 116, 227);
+    font-size: 18px;
+    color: #FFF;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+
+  }
+}
+  #firstview{
+    width: 100%;
+    background: url(img/fv__bg-pc.svg) no-repeat;
+    background-size: contain;
+  .firstview__content{
+    width: 100%;
+  }
+    h1{
+    margin-top: 30px;
+    }
+    .firstview__txt{
+      font-size: 18px;
+    }
+     .firstview__cta {
+    display: inline-block;
+     }
+
+    .firstview__cta-btn {
+      text-decoration: none;
+      color :white;
+    }
+  
+  .firstview__img {
+    width: 100%;
+    img{
+      width: 300px;
+      float: right;
+    }
+  }
+
 
 
 }
