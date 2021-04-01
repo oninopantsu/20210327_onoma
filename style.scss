@@ -81,7 +81,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
 
 
   #firstview {
-    width: 100%;
+    width: 90%;
     height: 170vw;
     margin: 0 auto;
     background: url(img/fv__bg-pc.svg) no-repeat;
@@ -98,23 +98,26 @@ $background-clr:rgba(228, 82, 231, 0.374);
       font-size: 18px;
     }
     .firstview__img{
-      width: 280px;
-      margin-top: 20px;
+      width: 100%;
+      img{
+        width: 100%;
+        margin: 30px auto 10px;
+      }
 
     }
     .firstview__btn {
     font-size: 16px;
-    margin-top: 20px;
-    margin-left:50px;
+    width: 90%;
+    margin: 0 auto;
     font-size: 20px;
     border-radius: 30px;
     text-align: center;
     background-color: $btnClr;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
     .firstview__cta-btn{
-      text-decoration: none;
-      color: #fff;
+    text-decoration: none;
+    color: #fff;
     }
     }
 
@@ -122,7 +125,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
 
   @media screen and( min-width:769px){
   #firstview {
-    width: 90%;
+    width:90%;
     height: 40vw;
     background-size: cover;
     margin: 0 auto;
@@ -154,17 +157,17 @@ $background-clr:rgba(228, 82, 231, 0.374);
       padding-bottom: 20px;
     }
     .about__img{
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
-      img{
-        width: 100%;
-      }
+    }
+    img{
+      width: 100%;
     }
   }
 
 @media screen and (min-width:769px){
   #about{
-    width: 100%;
+    width: 1000%;
     height: 50vw;
     margin: 0 auto;
     display: flex;
@@ -186,10 +189,10 @@ $background-clr:rgba(228, 82, 231, 0.374);
 
 
 #trouble{
-  width: 100%;
+  width: 90%;
   height: 120vw;
   text-align: left;
-  margin-top: 50px;
+  margin: 50px auto 10px;
   .trouble__ttl{
     @include ttlstyle();
     margin-bottom: 40px;
@@ -264,6 +267,10 @@ $background-clr:rgba(228, 82, 231, 0.374);
   @include ttlstyle();
   margin-bottom: 20px;
 }
+#learn > ul{
+  width: 90%;
+  margin: 0 auto;
+}
 .learn__text{
   margin: auto 0;
   span{
@@ -272,8 +279,12 @@ $background-clr:rgba(228, 82, 231, 0.374);
     font-weight: bold;
   }
 }
-.learn__item > li{
+li{
   list-style: none;
+}
+.learn__item{
+  width: 90%;
+  margin: 0 auto;
 }
 .learn__item-ttl{
   font-size: 25px;
@@ -458,7 +469,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
       font-size: 14px;
       position: absolute;
       z-index: 2;
-      top: 13rem;
+      top: 12.5rem;
       left: 1rem;
     }
     .company__content {
@@ -492,7 +503,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
       width: 100%;
     }
     .company__item-cat{
-      top: 7.5rem !important;
+      top: 8rem !important;
     }
     .company__txt{
       font-size: 0.8em !important;
@@ -561,7 +572,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
   .plan__list-btn{
     text-decoration: none;
     background-color: rgba(217, 215, 215, 0.654);
-    padding: 10px 20px;
+    padding: 18px 80px;
     border-radius: 30px;
     color: $fontClr;
     display: inline-block;
@@ -587,7 +598,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
 
 #question {
   width: 90%;
-  height: 250vw;
+  height: 260vw;
   margin: 0 auto;
   .question__ttl {
     @include ttlstyle();
@@ -599,10 +610,10 @@ $background-clr:rgba(228, 82, 231, 0.374);
     
   }
   .question__wrapper-ttl{
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
     padding: 15px  15px;
     border: 1px solid  rgba(212, 95, 190, 0.867);
     color:  rgba(212, 95, 190, 0.867);
@@ -621,30 +632,35 @@ $background-clr:rgba(228, 82, 231, 0.374);
     line-height: 2rem;
   }
   .question__a{
-    padding: 30px;
+    width: 90%;
+    margin: 0 auto;
     font-size: 16px;
     text-align: left;
     display: flex;
-    margin: 10px;
+    padding: 18px 0 24px; 
     
   }
    p > span{
     color: rgb(60, 116, 227);
     font-size: 20px;
     font-weight: bold;
-    padding-right: 30px;
+    padding-right: 18px;
    }
 }
 @media screen and (min-width:769px){
   #question{
     width: 90%;
-    height: 70vw;
+    height: 60vw;
     margin: 0 auto;
     .question__wrapper-ttl{
       justify-content: flex-start;
+      width: 100%;
     }
-    i{
-      margin-left: 400px;
+    .question__wrapper-ttl:nth-child(3){
+      text-align: right;
+    }
+    .question__content-ttl{
+      width: 90%;
     }
 
   }
