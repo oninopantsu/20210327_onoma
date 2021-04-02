@@ -100,25 +100,27 @@ $background-clr:rgba(228, 82, 231, 0.374);
     .firstview__img{
       width: 100%;
       img{
-        width: 100%;
-        margin: 30px auto 10px;
+        width: 90%;
+        margin: 20px auto 10px;
       }
 
     }
     .firstview__btn {
     font-size: 16px;
-    width: 90%;
+    width: 300px;
     margin: 0 auto;
-    font-size: 20px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: $btnClr;
-    display: inline-block;
-    padding: 10px 10px;
-    .firstview__cta-btn{
-    text-decoration: none;
-    color: #fff;
     }
+    .firstview__cta-btn{
+      background-color: $btnClr;
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 30px;
+      text-align: center;
+      display: inline-block;
+      padding: 20px 30px;
+
+    
     }
 
   }
@@ -129,23 +131,28 @@ $background-clr:rgba(228, 82, 231, 0.374);
     height: 40vw;
     background-size: cover;
     margin: 0 auto;
+    .firstview__wrapper{
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 50px;
+      display: flex;
+    }
+
   .firstview__img {
     width: 50%;
-    float: right;
-    margin-top: -180px;
+    
   }
   .firstview__content{
-    padding-top: 140px;
+    height: 100px;
     padding-left: 100px;
     width: 50%;
   }
   .firstview__btn{
     margin-left: 100px;
+    margin-top: -200px;
   }
+  } 
   }
-  }
-    
-  
 
   #about{
     width: 100%;
@@ -167,7 +174,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
 
 @media screen and (min-width:769px){
   #about{
-    width: 1000%;
+    width: 100%;
     height: 50vw;
     margin: 0 auto;
     display: flex;
@@ -190,7 +197,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
 
 #trouble{
   width: 90%;
-  height: 120vw;
+  height: 110vw;
   text-align: left;
   margin: 50px auto 10px;
   .trouble__ttl{
@@ -514,15 +521,16 @@ li{
   width: 100%;
   height: 1200px;
   margin-bottom: 50px;
+  margin: 0 auto;
   .plan__item {
     width: 80%;
     text-align: center;
     border: 1px solid rgba(217, 215, 215, 0.654);
     border-radius: 20px;
     height: 300px;
-    margin: 20px auto;
-  
+
   }
+  
   .plan__item:nth-child(2n){
     height: 420px;
   }
@@ -598,7 +606,7 @@ li{
 
 #question {
   width: 90%;
-  height: 260vw;
+  height: vw;
   margin: 0 auto;
   .question__ttl {
     @include ttlstyle();
