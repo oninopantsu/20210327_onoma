@@ -161,7 +161,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
   .md__btn{
     background-color: $btnClr;
     border-radius: 30px;
-    padding: 20px 60px;
+    padding: 12px 60px;
     display: inline-block;
     text-decoration: none;
     font-size: 14px;
@@ -173,7 +173,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
   #about{
     width: 100%;
     text-align: center;
-    padding: 10px 0 30px;
+    padding: 30px 0 30px;
 
     background-color: $background-clr;
     .about__txt{
@@ -197,6 +197,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
   #about{
     width: 100%;
     margin: 0 auto;
+    padding: 60px 0 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -263,7 +264,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
       text-align: center;
     
     .trouble__ttl{
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
     .trouble__card-item{
       display: flex;
@@ -336,6 +337,9 @@ li{
   font-weight: bold;
   list-style: none;
 }
+.learn__item-ttl > br{
+  display: none;
+}
 .learn__item-txt{
   font-size: 1rem;
   padding-bottom: 20px;
@@ -352,7 +356,7 @@ li{
 @media screen and (min-width:769px){
   #learn{
     .learn__ttl{
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
     .learn__item{
       display: flex;
@@ -362,25 +366,31 @@ li{
       flex-direction: row-reverse;
     }
     .learn__text{
-      width: 60%;
-      padding-left: 20px;
+      width: 50%;
+      margin: 0 auto;
+      padding-left: 30px;
       
     }
     .learn__item-ttls{
       display: flex;
-      font-size: 2.2rem;
+      font-size: 2.8rem;
       span{
-        margin-top: 20px;
+        font-size: 1.8rem;
       }
     }
     .learn__item-ttl{
-      line-height: 1.3em;
+      font-size: 1.4rem;
+      line-height: 1em;
+      margin: 0;
+      padding-left: 20px;
     }
     .learn__item-txt{
       margin-top: 30px;
+      font-size: 0.8rem;
+      line-height: 1.6rem;
     }
     .learn__item-img img{
-      width: 90%;
+      width: 60%;
       margin-left: 30px;
     }
 
@@ -414,10 +424,20 @@ li{
   #feature{
     width: 90%;
     margin: 30px auto 0;
-  }
-  .feature__icon-item{
-    display: flex;
-    width: 10% !important;
+    .feature__ttl{
+      font-size: 2rem;
+      padding-top: 20px;
+    }
+    .feature__icon ul{
+      display: flex;
+      justify-content: center;
+      padding: 30px 0;
+    }
+    .feature__icon-item{
+      display: block;
+      width: 12%;
+
+    }
   }
 }
 
@@ -455,102 +475,105 @@ li{
   #service{
     width: 100%;
     margin: 0 auto;
+    padding: 30px 0;
+    .service__ttl{
+      font-size: 2rem;
+    }
   .service__btns{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 
   }
+  .service__btn-blue{
+    padding: 20px 120px;
+  }
   .service__btn-white{
     margin-left: 20px;
+    padding: 20px 80px;
   }
 
   }
 
 }
-
-#intro__company {
-  width: 100%;
-  margin-bottom: 30px;
+#intro__company{
+  width: 90%;
   .intro__company-ttl{
     @include ttlstyle();
-    margin-bottom: 20px;
   }
   .company__wrapper-card{
+    min-width: 100%;
+    height: auto;
     display: flex;
-    overflow-x: scroll;
-    
+    overflow: hidden;
   }
   .company__card{
-    border: 1px solid rgba(164, 159, 159, 0.524);
+    width: 80%;
+    flex: none;
     border-radius: 20px;
+    border: 1px solid rgba(164, 159, 159, 0.524);
+    box-shadow: 1 1 0 rgba(164, 159, 159, 0.524);
     position: relative;
     z-index: 1;
-    margin-right: 20px;
-    margin-left: 10px;
-    display: block;
-    width: 80%;
-  }
-  .company__card:last-child{
-    margin-right: 0;
+    margin: 30px 5px 50px;
   }
   .company__card-eyecatch{
     width: 100%;
     border-radius: 20px;
-    img{
-      width: 100%;
-    }
   }
-  .company__item-cat {
-    background-color: #fff;
-    border: 1px solid $btnClr;
-    display: inline-block;
-    padding: 5px;
-    font-size: 14px;
+  .company__item-cat{
     position: absolute;
-    z-index: 2;
-    top: 10rem;
+    top: 11rem;
     left: 1rem;
+    font-size: 0.8rem;
+    border: 1px solid $btnClr;
+    padding: 6px;
+    background-color: #fff;
+    z-index: 2;
   }
-  .company__content {
-    margin: 10px;
+  .company__content{
+    margin: 20px 30px;
+  }
+  .company__ttl{
+    font-size: 1rem;
+    padding-bottom: 16px;
+  }
+  .company__txt{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
     
   }
-  .company__ttl {
-    padding-top: 10px;
-    font-size: 14px;
-    margin-top: 14px;
-  }
-  .company__txt {
-    padding: 10px;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 0 10px;
-  }
-}
 
-@media screen and (min-width:769px){
-  #company{
+}
+@media screen and (min-width:769px) {
+  #intro__company{
     width: 100%;
-    
-    .company__card{
-      width: 50%;
+    margin: 50px 0;
+    .intro__company-ttl{
+      font-size: 2rem;
+      padding-bottom: 20px;
     }
     .company__wrapper-card{
       width: 100%;
-      margin-bottom: 50px;
-      display: flex;
-      justify-content: space-between;
+      margin: 0;
     }
-  .company__card-eyecatch{
-  width: 100%;
-  img{
-    width: 100%;
-  }
-  }
-    
-  }
+    .company__card{
+      width: 19%;
+      margin-left: 10px;
+    }
+    .company__card:first-child{
+      margin-left: 0;
+    }
+    .company__card-eyecatch{
+      width: 100%;
+    }
+    .company__item-cat{
+      top: 8.5rem;
+    }
+    }
+  
 }
+
 
 #plan {
   width: 90%;
@@ -561,7 +584,7 @@ li{
     border: 1px solid rgba(217, 215, 215, 0.654);
     border-radius: 20px;
     height: 300px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 
   }
   .plan__wrapper{
@@ -582,6 +605,7 @@ li{
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 100px;
+    padding-top: 20px;
     text-align: center;
   }
   .plan__content-pink{
@@ -592,6 +616,7 @@ li{
     display: inline-block;
     width: 100%;
     height: 100px;
+    padding-top: 20px;
     text-align: center;
   }
   
@@ -608,10 +633,11 @@ li{
   
   .plan__list{
     border-bottom: 1px solid rgba(217, 215, 215, 0.654);
-    text-align: center;
     font-size: 16px;
     padding: 20px;
     list-style: none;
+    width: 80%;
+    margin: 0 auto;
   }
   
   .plan__list-btn{
@@ -628,6 +654,10 @@ li{
   #plan{
     width: 90%;
     margin: 0 auto;
+    .plan__ttl{
+      font-size: 2rem;
+      padding-bottom: 40px;
+    }
     .plan__wrapper {
     display: flex;
     align-items: center;
@@ -636,13 +666,16 @@ li{
     .plan__item{
       width: 30%;
       margin: 0;
+      padding-bottom: 30px;
+    }
+    .plan__content-main{
+      font-size: 2rem;
     }
   }
 }
 
 #question {
   width: 90%;
-  height: 640px;
   margin: 0 auto;
   .question__ttl {
     @include ttlstyle();
@@ -696,20 +729,29 @@ li{
   #question{
     width: 90%;
     margin: 0 auto;
+    .question__wrapper{
+      width: 70%;
+      margin: 30px auto 50px;
+
+    }
+    .question__ttl{
+      font-size: 2rem;
+    }
     .question__wrapper-ttl{
       justify-content: flex-start;
-      width: 100%;
+      margin: 0 auto;
     }
     .question__wrapper-ttl:nth-child(3){
       text-align: right;
     }
     .question__content-ttl{
-      width: 90%;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 10px;
     }
 
   }
 }
-
 #sample{
   width: 100%;
   background-color: $background-clr;
@@ -721,12 +763,13 @@ li{
   }
   .sample__btns{
     font-size: 16px;
-    margin: 50px 0;
+    margin-top: 50px;
     font-size: 20px;
     border-radius: 30px;
     text-decoration: none;
     text-align: center;
     color: #fff;
+    padding-bottom: 20px;
   }
   .sample__btn-blue{
     background-color:rgba(54, 54, 217, 0.846);
@@ -740,18 +783,28 @@ li{
     padding: 20px 110px;
   }
 }
+
+
 @media screen and (min-width: 769px){
   #sample{
     width: 100%;
-    margin: 0 auto;
+    padding: 30px 0 50px;
+    .sample__ttl{
+      font-size: 2rem;
+    }
   .sample__btns{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    padding-bottom: 30px;
 
+  }
+  .sample__btn-blue{
+    padding: 20px 120px;
   }
   .sample__btn-white{
     margin-left: 20px;
+    padding: 20px 80px;
   }
 
   }
@@ -759,7 +812,6 @@ li{
 }
 #footer {
   background-color:rgba(238, 224, 242, 0.839);
-  padding-top: 30px;
   .footer__content{
     margin-bottom: 40px;
   }
@@ -794,4 +846,5 @@ li{
       width: 100px
     }
   }
+
 }
