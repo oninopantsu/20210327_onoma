@@ -609,6 +609,7 @@
   border-radius: 20px;
   height: 300px;
   margin: 0 auto 30px;
+  padding-bottom: 20px;
 }
 
 #plan .plan__wrapper {
