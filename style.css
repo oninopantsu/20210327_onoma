@@ -94,7 +94,7 @@
 }
 
 #firstview .firstview__btn {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 50px;
   display: block;
 }
@@ -103,9 +103,8 @@
   background-color: rgba(232, 101, 208, 0.867);
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
   border-radius: 30px;
-  padding: 20px 30px;
+  padding: 1.2rem 1.4rem;
 }
 
 #firstview .firstview__md-btn {
@@ -435,10 +434,20 @@
   border: 1px solid rgba(225, 111, 208, 0.723);
   display: inline-block;
   border-radius: 20px;
-  padding: 30px 10px;
+  padding: 2rem 0.8rem;
   box-shadow: 0 0 5px rgba(225, 111, 208, 0.627);
   text-align: center;
   margin: 10px 10px;
+  position: relative;
+}
+
+#feature .feature__icon-item > a img {
+  width: 100%;
+}
+
+#feature .feature__icon-item > p {
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -640,7 +649,7 @@
 }
 
 #plan .plan__content-blue {
-  font-size: 18px;
+  font-size: 1rem;
   color: #fff;
   background-color: #3c74e3;
   border-radius: 20px 20px 0 0;
@@ -653,7 +662,7 @@
 #plan .plan__content-pink {
   background-color: rgba(228, 82, 231, 0.374);
   border-radius: 20px 20px 0 0;
-  font-size: 18px;
+  font-size: 1rem;
   color: #fff;
   display: inline-block;
   width: 100%;
@@ -677,21 +686,23 @@
 
 #plan .plan__list {
   border-bottom: 1px solid rgba(217, 215, 215, 0.654);
-  font-size: 16px;
+  font-size: 90%;
   padding: 20px;
   list-style: none;
   width: 80%;
-  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
 }
 
 #plan .plan__list-btn {
   text-decoration: none;
   background-color: rgba(217, 215, 215, 0.654);
-  padding: 18px 80px;
+  padding: 0.8rem 4rem;
   border-radius: 30px;
   color: black;
   display: inline-block;
-  margin: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 769px) {

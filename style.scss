@@ -109,7 +109,7 @@ $background-clr:rgba(228, 82, 231, 0.374);
       }
     }
     .firstview__btn {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 50px;
     display: block;
   }
@@ -117,9 +117,8 @@ $background-clr:rgba(228, 82, 231, 0.374);
     background-color: $btnClr;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
     border-radius: 30px;
-    padding: 20px 30px;
+    padding: 1.2rem 1.4rem;
     }
     .firstview__md-btn{
       display: none;
@@ -423,10 +422,19 @@ li{
     border: 1px solid rgba(225, 111, 208, 0.723);
     display: inline-block;
     border-radius: 20px;
-    padding: 30px 10px;
+    padding: 2rem 0.8rem;
     box-shadow: 0 0 5px rgba(225, 111, 208, 0.627);
     text-align: center;
     margin: 10px 10px;
+    position: relative;
+  }
+  .feature__icon-item > a img{
+    width: 100%;
+
+  }
+  .feature__icon-item > p{
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
   }
 }
 @media screen and (min-width:769px){
@@ -609,7 +617,7 @@ li{
     margin-bottom: 20px;
   }
   .plan__content-blue {
-    font-size: 18px;
+    font-size: 1rem;
     color: #fff;
     background-color: rgb(60, 116, 227);
     border-radius: 20px 20px 0 0;
@@ -621,7 +629,7 @@ li{
   .plan__content-pink{
     background-color: $background-clr;
     border-radius: 20px 20px 0 0;
-    font-size: 18px;
+    font-size: 1rem;
     color: #fff;
     display: inline-block;
     width: 100%;
@@ -643,21 +651,23 @@ li{
   
   .plan__list{
     border-bottom: 1px solid rgba(217, 215, 215, 0.654);
-    font-size: 16px;
+    font-size: 90%;
     padding: 20px;
     list-style: none;
     width: 80%;
-    margin: 0 auto;
+    text-align: center;
+    display: inline-block ;
   }
   
   .plan__list-btn{
     text-decoration: none;
     background-color: rgba(217, 215, 215, 0.654);
-    padding: 18px 80px;
+    padding: 0.8rem 4rem;
     border-radius: 30px;
     color: $fontClr;
     display: inline-block;
-    margin: 20px;
+    text-align: center;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width:769px){
