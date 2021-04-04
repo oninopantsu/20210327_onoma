@@ -478,9 +478,8 @@
 }
 
 #service .service__btns {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 50px 0;
-  font-size: 20px;
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
@@ -489,14 +488,14 @@
 
 #service .service__btn-blue {
   background-color: rgba(54, 54, 217, 0.846);
-  padding: 20px 150px;
+  padding: 1.2rem 8.5rem;
 }
 
 #service .service__btn-white {
   display: inline-block;
   color: rgba(228, 82, 231, 0.374);
   background-color: #fff;
-  padding: 20px 110px;
+  padding: 1.2rem 6.5rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -537,11 +536,11 @@
   min-width: 100%;
   height: auto;
   display: flex;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #intro__company .company__card {
-  width: 80%;
+  width: 90%;
   flex: none;
   border-radius: 20px;
   border: 1px solid rgba(164, 159, 159, 0.524);
@@ -823,7 +822,7 @@
 }
 
 #sample .sample__btns {
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 50px;
   font-size: 20px;
   border-radius: 30px;
@@ -835,14 +834,14 @@
 
 #sample .sample__btn-blue {
   background-color: rgba(54, 54, 217, 0.846);
-  padding: 20px 150px;
+  padding: 1rem 8rem;
 }
 
 #sample .sample__btn-white {
   display: inline-block;
   color: rgba(228, 82, 231, 0.374);
   background-color: #fff;
-  padding: 20px 110px;
+  padding: 1rem 6rem;
 }
 
 @media screen and (min-width: 769px) {
